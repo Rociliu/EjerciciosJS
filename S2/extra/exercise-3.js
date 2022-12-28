@@ -30,26 +30,21 @@ const users = [
     },
 ]
 
+//Creo un objeto vacío porque le voy a meter propiedades de objetos
+let totalSounds = {};
 
+for (let user of users){
+    for (let sounds in user.favoritesSounds){
 
+//si en el objeto vacío no está la propiedad "key" (sound), se la añando con valor 1
+        if (!totalSounds.hasOwnProperty(sounds)){
+            totalSounds[sounds] = 1;
+        } else { //si el objeto ya tiene la key, la sumo
+            totalSounds[sounds]++;
+        }
+        
+    }
+} 
 
+console.log(totalSounds);
 
-// let volumeSounds = [] //Saco todos los valores de volume y los meto en este array
-// for (let user of users) {
-//     for (let sound in user.favoritesSounds) {
-//         //console.log(user.favoritesSounds[sound]);
-//         volumeSounds.push(user.favoritesSounds[sound].volume)
-//     }
-// }
-// console.log(volumeSounds);
-
-
-// let totalVolume = 0;
-// //hago la media usando el array que he creado
-//     for (let i = 0; i < volumeSounds.length; i++) {
-//         totalVolume = (totalVolume + volumeSounds[i])
-//         //console.log(totalVolume)
-//     }
-// let mediaVolume = totalVolume/volumeSounds.length;
-// console.log("La media del volumen de los sonidos favoritos es de: ");
-// console.log(mediaVolume);
