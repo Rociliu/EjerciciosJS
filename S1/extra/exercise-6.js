@@ -11,11 +11,13 @@ const products = [
 
 for (let product of products){
     if (product.sellCount < 20){
-        badProducts.push(product.name)
+        badProducts.push(product)
     } else {
-        goodProducts.push(product.name)
+        goodProducts.push(product)
     }
 }
-console.log("Los más vendidos son: " + goodProducts);
-console.log("Los menos vendidos son: " + badProducts);
+console.log("Los más vendidos son: ");
+console.log(goodProducts);
+console.log("Los menos vendidos son: ");
+console.log(badProducts);
 
