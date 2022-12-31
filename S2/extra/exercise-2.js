@@ -46,6 +46,6 @@ let totalVolume = 0;
 let mediaVolume = totalVolume/volumeSounds.length;
 console.log("La media del volumen de los sonidos favoritos es de: ");
 console.log(mediaVolume);
-//No calcula bien la media si hago: totalVolume = (totalVolume + volumeSounds[i])/volumeSounds.length
+
 
 
