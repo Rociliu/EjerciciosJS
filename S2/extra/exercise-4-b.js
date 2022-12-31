@@ -1,19 +1,19 @@
 "use strict";
-let myArray = ['Rosa', 'Lirio', 'Margarita', 'Amapola', 'Gardenia', 'Azahar', 'Narciso', 'Jazmin'];
+const flowers = ['Rosa', 'Lirio', 'Margarita', 'Amapola', 'Gardenia', 'Azahar', 'Narciso', 'Jazmin'];
 
-function findArrayIndex(myArray, text) {
-    let position = myArray.indexOf(text);
+function findArrayIndex(array, text) {
+    let position = flowers.indexOf(text);
     return position;
 }
 
 
-function removeItem(myArray, text) {
-    return findArrayIndex(myArray, text)
+function removeItem(array, text) {
+    return findArrayIndex(array, text)
     }
 
-let removeText = removeItem(myArray, 'Gardenia');
-console.log(removeText);
-myArray.splice(removeText,1);
-console.log(myArray);
+let removeText = removeItem(flowers, 'Gardenia');
+console.log("El elemento eliminado está en la posición: " + removeText);
+flowers.splice(removeText,1);
+console.log(flowers);
 
 
