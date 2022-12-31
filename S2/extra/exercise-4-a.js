@@ -1,9 +1,9 @@
 "use strict";
-let myArray = ['Rosa', 'Lirio', 'Margarita', 'Amapola', 'Gardenia', 'Azahar'];
+let flowers = ['Rosa', 'Lirio', 'Margarita', 'Amapola', 'Gardenia', 'Azahar'];
 
-function findArrayIndex(myArray, text) {
-    let position = myArray.indexOf(text);
+function findArrayIndex(array, text) {
+    let position = flowers.indexOf(text);
     return position;
 }
-let positionText = findArrayIndex(myArray, 'Azahar');
+let positionText = findArrayIndex(flowers, 'Azahar');
 console.log("El texto está en la posición "+ positionText);
