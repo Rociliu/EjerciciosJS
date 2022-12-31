@@ -4,6 +4,6 @@ const animalFunction = () => {
             race: 'Tiger'}
 };
 let {name, race} = animalFunction();
-console.log("name: "+name);//no entiendo por qué sale tachado
-console.log("race: "+race);
+console.log(`name: ${name}`);//no entiendo por qué sale tachado
+console.log(`race: ${race}`);
 
