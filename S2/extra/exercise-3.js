@@ -1,4 +1,4 @@
-"user strict";
+"use strict";
 const users = [
     {name: 'Manolo el del bombo',
         favoritesSounds: {
@@ -30,16 +30,16 @@ const users = [
     },
 ]
 
-//Creo un objeto vacío porque le voy a meter propiedades de objetos
+//1.Creo un objeto vacío porque le voy a meter propiedades de objetos:
 let totalSounds = {};
 
 for (let user of users){
     for (let sounds in user.favoritesSounds){
 
-//si en el objeto vacío no está la propiedad "key" (sound), se la añando con valor 1
+//2.si en el objeto vacío no está la propiedad sound (la "key"), se la añando con valor 1:
         if (!totalSounds.hasOwnProperty(sounds)){
             totalSounds[sounds] = 1;
-        } else { //si el objeto ya tiene la key, la sumo
+        } else { //3.si el objeto ya tiene la key, la sumo:
             totalSounds[sounds]++;
         }
         
